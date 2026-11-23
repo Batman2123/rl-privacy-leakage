@@ -70,9 +70,10 @@ The left graph shows the log probabilities before and after memorization for eac
 
 ## Next steps
 
-- `exp_grpo.py`: GRPO on FACTS-Parametric starting from the memorized model, then rerun both quizzes
-- Control condition: same number of steps of standard fine-tuning on FACTS answers
-- Decide whether to preserve refusals during memorization (e.g. mix in chat data)
+- `exp_grpo.py`: We need to run GRPO on unrelated facts, then rerun the quizzes and compare by group.
+- Figure out our control condition: Just make it memorize the FACTS dataset instead of RL?
+- Decide what we could change so the model still refuses after memorizing if we would like to change that
+- Gonna need GPMoo cause my free Colab GPU limit ran out doing this
 
 ## References
 
